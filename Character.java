@@ -75,5 +75,6 @@ public class Character
 				YMult = 1;
 			}
 			myArena.pause();
+			}
   }
 }
