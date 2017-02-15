@@ -25,7 +25,7 @@ public class Character
     double ypos;
     int XMult = 1;
     int YMult = 1;
-    while(i > 0)
+    while(true)
 		{
 			xpos = cone1.getXPosition();
 			xpos = xpos + (XMult * 2.5);
