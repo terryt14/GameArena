@@ -13,5 +13,15 @@ public class Character
     myArena.addRectangle(top);
     double xPos;
     double yPos;
+    Rectangle cone1 = new Rectangle(150.0,154.0,1.0,10.0,"ORANGE");
+    Rectangle cone2 = new Rectangle(150.0,153.0,1.0,8.0,"ORANGE");
+    Rectangle cone3 = new Rectangle(150.0,152.0,1.0,6.0,"WHITE");
+    Rectangle cone4 = new Rectangle(150.0,151.0,1.0,4.0,"WHITE");
+    Rectangle cone5 = new Rectangle(150.0,150.0,1.0,2.0,"ORANGE");
+    myArena.addRectangle(cone1);
+    myArena.addRectangle(cone2);
+    myArena.addRectangle(cone3);
+    myArena.addRectangle(cone4);
+    myArena.addRectangle(cone5);
   }
 }
