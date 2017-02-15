@@ -21,8 +21,8 @@ public class Character
     myArena.addRectangle(cone3);
     myArena.addRectangle(cone4);
     myArena.addRectangle(cone5);
-    double xPos;
-    double yPos;
+    double xpos;
+    double ypos;
     int XMult = 1;
     int YMult = 1;
     while(i > 0)
