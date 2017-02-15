@@ -26,13 +26,13 @@ public class Character
     int XMult = 1;
     int YMult = 1;
     while(true)
-		{
-			xpos = cone1.getXPosition();
-			xpos = xpos + (XMult * 2.5);
-			cone1.setXPosition(xpos);
-			ypos = cone1.getYPosition();
-			ypos = ypos + (YMult * 2.5);
-			cone1.setYPosition(ypos);
+	{
+	  xpos = cone1.getXPosition();
+	  xpos = xpos + (XMult * 2.5);
+	  cone1.setXPosition(xpos);
+	  ypos = cone1.getYPosition();
+	  ypos = ypos + (YMult * 2.5);
+	  cone1.setYPosition(ypos);
       xpos = cone2.getXPosition();
 			xpos = xpos + (XMult * 2.5);
 			cone2.setXPosition(xpos);
