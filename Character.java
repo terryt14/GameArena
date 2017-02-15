@@ -11,8 +11,6 @@ public class Character
     myArena.addBall(rightWheel);
     myArena.addRectangle(body);
     myArena.addRectangle(top);
-    double xPos;
-    double yPos;
     Rectangle cone1 = new Rectangle(150.0,154.0,10.0,10.0,"ORANGE");
     Rectangle cone2 = new Rectangle(150.0,153.0,8.0,10.0,"ORANGE");
     Rectangle cone3 = new Rectangle(150.0,152.0,6.0,10.0,"WHITE");
@@ -23,10 +21,11 @@ public class Character
     myArena.addRectangle(cone3);
     myArena.addRectangle(cone4);
     myArena.addRectangle(cone5);
-    
+    double xPos;
+    double yPos;
     int XMult = 1;
-		int YMult = 1;
-		while(i > 0)
+    int YMult = 1;
+    while(i > 0)
 		{
 			xpos = cone1.getXPosition();
 			xpos = xpos + (XMult * 2.5);
