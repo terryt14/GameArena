@@ -23,5 +23,57 @@ public class Character
     myArena.addRectangle(cone3);
     myArena.addRectangle(cone4);
     myArena.addRectangle(cone5);
+    
+    int XMult = 1;
+		int YMult = 1;
+		while(i > 0)
+		{
+			xpos = cone1.getXPosition();
+			xpos = xpos + (XMult * 2.5);
+			cone1.setXPosition(xpos);
+			ypos = cone1.getYPosition();
+			ypos = ypos + (YMult * 2.5);
+			cone1.setYPosition(ypos);
+      xpos = cone2.getXPosition();
+			xpos = xpos + (XMult * 2.5);
+			cone2.setXPosition(xpos);
+			ypos = cone2.getYPosition();
+			ypos = ypos + (YMult * 2.5);
+			cone2.setYPosition(ypos);
+      xpos = cone3.getXPosition();
+			xpos = xpos + (XMult * 2.5);
+			cone3.setXPosition(xpos);
+			ypos = cone3.getYPosition();
+			ypos = ypos + (YMult * 2.5);
+			cone3.setYPosition(ypos);
+      xpos = cone4.getXPosition();
+			xpos = xpos + (XMult * 2.5);
+			cone4.setXPosition(xpos);
+			ypos = cone4.getYPosition();
+			ypos = ypos + (YMult * 2.5);
+			cone4.setYPosition(ypos);
+      xpos = cone5.getXPosition();
+			xpos = xpos + (XMult * 2.5);
+			cone5.setXPosition(xpos);
+			ypos = cone5.getYPosition();
+			ypos = ypos + (YMult * 2.5);
+			cone5.setYPosition(ypos);
+			if (xpos >= 500)
+			{
+				XMult = -1;
+			}
+			if (xpos <= 0)
+			{
+				XMult = 1;
+			}
+			if (ypos >= 500)
+			{
+				YMult = -1;
+			}
+			if (ypos <= 0)
+			{
+				YMult = 1;
+			}
+			myArena.pause();
   }
 }
