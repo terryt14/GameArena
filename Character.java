@@ -34,46 +34,82 @@ public class Character
 	  ypos = ypos + (YMult * 2.5);
 	  cone1.setYPosition(ypos);
       xpos = cone2.getXPosition();
-			xpos = xpos + (XMult * 2.5);
-			cone2.setXPosition(xpos);
-			ypos = cone2.getYPosition();
-			ypos = ypos + (YMult * 2.5);
-			cone2.setYPosition(ypos);
+	  xpos = xpos + (XMult * 2.5);
+	  cone2.setXPosition(xpos);
+	  ypos = cone2.getYPosition();
+	  ypos = ypos + (YMult * 2.5);
+	  cone2.setYPosition(ypos);
       xpos = cone3.getXPosition();
-			xpos = xpos + (XMult * 2.5);
-			cone3.setXPosition(xpos);
-			ypos = cone3.getYPosition();
-			ypos = ypos + (YMult * 2.5);
-			cone3.setYPosition(ypos);
+	  xpos = xpos + (XMult * 2.5);
+	  cone3.setXPosition(xpos);
+      ypos = cone3.getYPosition();
+	  ypos = ypos + (YMult * 2.5);
+	  cone3.setYPosition(ypos);
       xpos = cone4.getXPosition();
-			xpos = xpos + (XMult * 2.5);
-			cone4.setXPosition(xpos);
-			ypos = cone4.getYPosition();
-			ypos = ypos + (YMult * 2.5);
-			cone4.setYPosition(ypos);
+	  xpos = xpos + (XMult * 2.5);
+      cone4.setXPosition(xpos);
+	  ypos = cone4.getYPosition();
+	  ypos = ypos + (YMult * 2.5);
+	  cone4.setYPosition(ypos);
       xpos = cone5.getXPosition();
-			xpos = xpos + (XMult * 2.5);
-			cone5.setXPosition(xpos);
-			ypos = cone5.getYPosition();
-			ypos = ypos + (YMult * 2.5);
-			cone5.setYPosition(ypos);
-			if (xpos >= 500)
-			{
-				XMult = -1;
-			}
-			if (xpos <= 0)
-			{
-				XMult = 1;
-			}
-			if (ypos >= 500)
-			{
-				YMult = -1;
-			}
-			if (ypos <= 0)
-			{
-				YMult = 1;
-			}
-			myArena.pause();
-			}
+	  xpos = xpos + (XMult * 2.5);
+      cone5.setXPosition(xpos);
+	  ypos = cone5.getYPosition();
+	  ypos = ypos + (YMult * 2.5);
+	  cone5.setYPosition(ypos);
+	  if (xpos >= 500)
+	    {
+		  XMult = -1;
+		}
+	  if (xpos <= 0)
+		{
+		  XMult = 1;
+		}
+	  if (ypos >= 500)
+	    {
+		  YMult = -1;
+		}
+	  if (ypos <= 0)
+	    {
+		  YMult = 1;
+		}
+	  myArena.pause();
+	  if (downPressed())
+	  {
+		ypos = body.getYPosition();
+	    ypos = ypos - 2.5;
+	    body.setYPosition(ypos);
+		
+		ypos = top.getYPosition();
+	    ypos = ypos - 2.5;
+	    top.setYPosition(ypos);
+		
+		ypos = leftWheel.getYPosition();
+	    ypos = ypos - 2.5;
+	    leftWheel.setYPosition(ypos);
+		
+		ypos = rightWheel.getYPosition();
+	    ypos = ypos - 2.5;
+	    rightWheel.setYPosition(ypos);		
+      }
+	  if (upPressed())
+	  {
+		ypos = body.getYPosition();
+	    ypos = ypos + 2.5;
+	    body.setYPosition(ypos);
+		
+		ypos = top.getYPosition();
+	    ypos = ypos + 2.5;
+	    top.setYPosition(ypos);
+		
+		ypos = leftWheel.getYPosition();
+	    ypos = ypos + 2.5;
+	    leftWheel.setYPosition(ypos);
+		
+		ypos = rightWheel.getYPosition();
+	    ypos = ypos + 2.5;
+	    rightWheel.setYPosition(ypos);		
+      }
+	}
   }
 }
