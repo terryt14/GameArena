@@ -27,10 +27,10 @@ public class Character
     myArena.addRectangle(cone5);
     double xpos;
     double ypos;
-    double xcar;
-    double ycar;
-    double xcone;
-    double ycone;
+    double xcar = 0;
+    double ycar = 0;
+    double xcone = 0;
+    double ycone = 0;
     double XMult = 1.5;
     double YMult = 1;
     while((xcar != xcone) && (ycar != ycone))
