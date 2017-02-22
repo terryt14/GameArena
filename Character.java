@@ -74,7 +74,7 @@ public class Character
 		  YMult = 1;
 		}
 	  myArena.pause();
-	  if (downPressed())
+	  if (myArena.downPressed())
 	  {
 		ypos = body.getYPosition();
 	    ypos = ypos - 2.5;
@@ -90,9 +90,10 @@ public class Character
 		
 		ypos = rightWheel.getYPosition();
 	    ypos = ypos - 2.5;
-	    rightWheel.setYPosition(ypos);		
+	    rightWheel.setYPosition(ypos);
+	    myArena.pause();
       }
-	  if (upPressed())
+	  if (myArena.upPressed())
 	  {
 		ypos = body.getYPosition();
 	    ypos = ypos + 2.5;
@@ -108,7 +109,8 @@ public class Character
 		
 		ypos = rightWheel.getYPosition();
 	    ypos = ypos + 2.5;
-	    rightWheel.setYPosition(ypos);		
+	    rightWheel.setYPosition(ypos);	
+	    myArena.pause();
       }
 	}
   }
