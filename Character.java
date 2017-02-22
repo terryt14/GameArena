@@ -74,44 +74,81 @@ public class Character
 		  YMult = 1;
 		}
 	  myArena.pause();
-	  if (myArena.downPressed())
-	  {
-		ypos = body.getYPosition();
-	    ypos = ypos - 2.5;
-	    body.setYPosition(ypos);
-		
-		ypos = top.getYPosition();
-	    ypos = ypos - 2.5;
-	    top.setYPosition(ypos);
-		
-		ypos = leftWheel.getYPosition();
-	    ypos = ypos - 2.5;
-	    leftWheel.setYPosition(ypos);
-		
-		ypos = rightWheel.getYPosition();
-	    ypos = ypos - 2.5;
-	    rightWheel.setYPosition(ypos);
-	    myArena.pause();
-      }
 	  if (myArena.upPressed())
 	  {
 		ypos = body.getYPosition();
-	    ypos = ypos + 2.5;
+		ypos = ypos - 3.5;
+		body.setYPosition(ypos);
+
+		ypos = top.getYPosition();
+		ypos = ypos - 3.5;
+		top.setYPosition(ypos);
+
+		ypos = leftWheel.getYPosition();
+		ypos = ypos - 3.5;
+		leftWheel.setYPosition(ypos);
+
+		ypos = rightWheel.getYPosition();
+		ypos = ypos - 3.5;
+		rightWheel.setYPosition(ypos);
+		myArena.pause();
+	      }
+	  if (myArena.downPressed())
+	  {
+		ypos = body.getYPosition();
+	    ypos = ypos + 3.5;
 	    body.setYPosition(ypos);
 		
 		ypos = top.getYPosition();
-	    ypos = ypos + 2.5;
+	    ypos = ypos + 3.5;
 	    top.setYPosition(ypos);
 		
 		ypos = leftWheel.getYPosition();
-	    ypos = ypos + 2.5;
+	    ypos = ypos + 3.5;
 	    leftWheel.setYPosition(ypos);
 		
 		ypos = rightWheel.getYPosition();
-	    ypos = ypos + 2.5;
+	    ypos = ypos + 3.5;
 	    rightWheel.setYPosition(ypos);	
 	    myArena.pause();
       }
+      if (myArena.rightPressed())
+	  {
+		xpos = body.getXPosition();
+	    xpos = xpos + 3.5;
+	    body.setXPosition(xpos);
+		
+		xpos = top.getXPosition();
+	    xpos = xpos + 3.5;
+	    top.setXPosition(xpos);
+		
+		xpos = leftWheel.getXPosition();
+	    xpos = xpos + 3.5;
+	    leftWheel.setXPosition(xpos);
+		
+		xpos = rightWheel.geXPosition();
+	    xpos = ypos + 3.5;
+	    rightWheel.setXPosition(xpos);	
+	    myArena.pause();
+	}
+	if (myArena.leftPressed())
+	  {
+		xpos = body.getXPosition();
+	    xpos = xpos - 3.5;
+	    body.setXPosition(xpos);
+		
+		xpos = top.getXPosition();
+	    xpos = xpos - 3.5;
+	    top.setXPosition(xpos);
+		
+		xpos = leftWheel.getXPosition();
+	    xpos = xpos - 3.5;
+	    leftWheel.setXPosition(xpos);
+		
+		xpos = rightWheel.getXPosition();
+	    xpos = ypos - 3.5;
+	    rightWheel.setXPosition(xpos);	
+	    myArena.pause();
 	}
   }
 }
