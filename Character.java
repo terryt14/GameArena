@@ -29,8 +29,8 @@ public class Character
     double ypos;
     double xcar = 0;
     double ycar = 0;
-    double xcone = 0;
-    double ycone = 0;
+    double xcone = 500;
+    double ycone = 500;
     double XMult = 1.5;
     double YMult = 1;
     while((xcar != xcone) && (ycar != ycone))
