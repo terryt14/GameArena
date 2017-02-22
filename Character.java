@@ -77,7 +77,6 @@ public class Character
 	    {
 		  YMult = 1;
 		}
-	road.move();
 	  if (myArena.upPressed())
 	  {
 		ypos = body.getYPosition();
