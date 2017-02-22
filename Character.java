@@ -23,8 +23,8 @@ public class Character
     myArena.addRectangle(cone5);
     double xpos;
     double ypos;
-    int XMult = 1;
-    int YMult = 1;
+    double XMult = 1.5;
+    double YMult = 1;
     while(true)
 	{
 	  xpos = cone1.getXPosition();
@@ -73,7 +73,6 @@ public class Character
 	    {
 		  YMult = 1;
 		}
-	  myArena.pause();
 	  if (myArena.upPressed())
 	  {
 		ypos = body.getYPosition();
@@ -91,7 +90,6 @@ public class Character
 		ypos = rightWheel.getYPosition();
 		ypos = ypos - 3.5;
 		rightWheel.setYPosition(ypos);
-		myArena.pause();
 	      }
 	  if (myArena.downPressed())
 	  {
@@ -109,8 +107,7 @@ public class Character
 		
 		ypos = rightWheel.getYPosition();
 	    ypos = ypos + 3.5;
-	    rightWheel.setYPosition(ypos);	
-	    myArena.pause();
+	    rightWheel.setYPosition(ypos);
       }
       if (myArena.rightPressed())
 	  {
@@ -128,8 +125,7 @@ public class Character
 		
 		xpos = rightWheel.getXPosition();
 	    xpos = xpos + 3.5;
-	    rightWheel.setXPosition(xpos);	
-	    myArena.pause();
+	    rightWheel.setXPosition(xpos);
 	}
 	if (myArena.leftPressed())
 	  {
@@ -147,9 +143,9 @@ public class Character
 		
 		xpos = rightWheel.getXPosition();
 	    xpos = xpos - 3.5;
-	    rightWheel.setXPosition(xpos);	
-	    myArena.pause();
+	    rightWheel.setXPosition(xpos);
 	}
+	myArena.pause();
 	}
   }
 }
