@@ -3,7 +3,7 @@ public class Character
   public static void main(String[] args)
   {
     GameArena myArena = new GameArena(500,500);
-    road.add()
+    road.add();
     Rectangle body = new Rectangle(250.0,250.0,40.0,20.0,"RED");
     Rectangle top = new Rectangle(250.0,240.0,25.0,10.0,"RED");
     Ball leftWheel = new Ball(240.0,270.0,10,"GREY");
@@ -74,7 +74,7 @@ public class Character
 	    {
 		  YMult = 1;
 		}
-	road.move()
+	road.move();
 	  if (myArena.upPressed())
 	  {
 		ypos = body.getYPosition();
