@@ -126,7 +126,7 @@ public class Character
 	    xpos = xpos + 3.5;
 	    leftWheel.setXPosition(xpos);
 		
-		xpos = rightWheel.geXPosition();
+		xpos = rightWheel.getXPosition();
 	    xpos = ypos + 3.5;
 	    rightWheel.setXPosition(xpos);	
 	    myArena.pause();
