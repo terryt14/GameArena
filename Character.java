@@ -179,7 +179,7 @@ public class Character
 	    rightWheel.setXPosition(xpos);
 	    }
 	}
-	if ((xconemin < xcar < xconemax) && (yconemin < ycar < yconemax))
+	if ((xconemin < xcar) && (xcar < xconemax) && (yconemin < ycar) && (ycar < yconemax))
 		break;
 	myArena.pause();
 	}
