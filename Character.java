@@ -33,7 +33,7 @@ public class Character
     double ycone = 500;
     double XMult = 2;
     double YMult = 1;
-    while((xcar != xcone) & (ycar != ycone))
+    while((xcar != xcone) && (ycar != ycone))
 	{
 	  xpos = cone1.getXPosition();
 	  xpos = xpos + (XMult * 2.5);
