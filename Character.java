@@ -29,6 +29,10 @@ public class Character
     double ypos;
     double xcar = 0;
     double ycar = 0;
+    double xconemin = 0;
+    double xconemax = 0;
+    double yconemin = 0;
+    double yconemax = 0;
     double xcone = 500;
     double ycone = 500;
     double XMult = 2;
@@ -39,10 +43,14 @@ public class Character
 	  xpos = xpos + (XMult * 2.5);
 	  cone1.setXPosition(xpos);
 	  xcone = xpos;
+	  xconemin = xcone - 10;
+	  xconemax = xcone + 10;
 	  ypos = cone1.getYPosition();
 	  ypos = ypos + (YMult * 2.5);
 	  cone1.setYPosition(ypos);
 	  ycone = ypos;
+	  yconemin = ycone - 10;
+	  yconemax = ycone + 10;
       xpos = cone2.getXPosition();
 	  xpos = xpos + (XMult * 2.5);
 	  cone2.setXPosition(xpos);
@@ -171,13 +179,8 @@ public class Character
 	    rightWheel.setXPosition(xpos);
 	    }
 	}
-	if ((xcone - 10.0) < xcar < (xcone + 10.0))
-	{
-	if ((ycone - 10.0) < ycar < (ycone + 10.0))
-	{
+	if ((xconemin < xcar < xconemax) && (yconemin < ycar < yconemax))
 		break;
-	}
-	}
 	myArena.pause();
 	}
   }
