@@ -31,18 +31,18 @@ public class Character
     double ycar = 0;
     double xcone = 500;
     double ycone = 500;
-    double XMult = 1.5;
+    double XMult = 2;
     double YMult = 1;
     while((xcar != xcone) && (ycar != ycone))
 	{
 	  xpos = cone1.getXPosition();
-	  xcone = xpos;
 	  xpos = xpos + (XMult * 2.5);
 	  cone1.setXPosition(xpos);
+	  xcone = xpos;
 	  ypos = cone1.getYPosition();
-	  ycone = ypos;
 	  ypos = ypos + (YMult * 2.5);
 	  cone1.setYPosition(ypos);
+	  ycone = ypos;
       xpos = cone2.getXPosition();
 	  xpos = xpos + (XMult * 2.5);
 	  cone2.setXPosition(xpos);
@@ -88,9 +88,9 @@ public class Character
 	  if (ycar > 0)
 	  {
 		ypos = body.getYPosition();
-		ycar = ypos;
 		ypos = ypos - 3.5;
 		body.setYPosition(ypos);
+		ycar = ypos;
 
 		ypos = top.getYPosition();
 		ypos = ypos - 3.5;
@@ -110,9 +110,9 @@ public class Character
 	  if (ycar < 500)
 	  {
 		ypos = body.getYPosition();
-		ycar = ypos;
 	    ypos = ypos + 3.5;
 	    body.setYPosition(ypos);
+	    ycar = ypos;
 		
 		ypos = top.getYPosition();
 	    ypos = ypos + 3.5;
@@ -132,9 +132,9 @@ public class Character
 	  if (xcar < 500)
 	  {
 		xpos = body.getXPosition();
-		xcar = xpos;
 	    xpos = xpos + 3.5;
 	    body.setXPosition(xpos);
+	    xcar = xpos;
 		
 		xpos = top.getXPosition();
 	    xpos = xpos + 3.5;
@@ -154,9 +154,9 @@ public class Character
 	  if (xcar > 0)
 	  {
 		xpos = body.getXPosition();
-		xcar = xpos;
 	    xpos = xpos - 3.5;
 	    body.setXPosition(xpos);
+	    xcar = xpos;
 		
 		xpos = top.getXPosition();
 	    xpos = xpos - 3.5;
