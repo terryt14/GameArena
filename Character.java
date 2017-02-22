@@ -171,7 +171,7 @@ public class Character
 	    rightWheel.setXPosition(xpos);
 	    }
 	}
-	if (((xcone - 10) < xcar < (xcone + 10)) && ((ycone - 10) < ycar < (ycone + 10)))
+	if (((xcone - 10.0) < xcar < (xcone + 10.0)) && ((ycone - 10.0) < ycar < (ycone + 10.0)))
 		break;
 	myArena.pause();
 	}
