@@ -27,14 +27,20 @@ public class Character
     myArena.addRectangle(cone5);
     double xpos;
     double ypos;
+    double xcar;
+    double ycar;
+    double xcone;
+    double ycone;
     double XMult = 1.5;
     double YMult = 1;
-    while(true)
+    while((xcar != xcone) && (ycar != ycone))
 	{
 	  xpos = cone1.getXPosition();
+	  xcone = xpos;
 	  xpos = xpos + (XMult * 2.5);
 	  cone1.setXPosition(xpos);
 	  ypos = cone1.getYPosition();
+	  ycone = ypos;
 	  ypos = ypos + (YMult * 2.5);
 	  cone1.setYPosition(ypos);
       xpos = cone2.getXPosition();
@@ -79,7 +85,10 @@ public class Character
 		}
 	  if (myArena.upPressed())
 	  {
+	  if (ycar > 0)
+	  {
 		ypos = body.getYPosition();
+		ycar = ypos;
 		ypos = ypos - 3.5;
 		body.setYPosition(ypos);
 
@@ -94,10 +103,14 @@ public class Character
 		ypos = rightWheel.getYPosition();
 		ypos = ypos - 3.5;
 		rightWheel.setYPosition(ypos);
-	      }
+	  }
+	  }
 	  if (myArena.downPressed())
 	  {
+	  if (ycar < 500)
+	  {
 		ypos = body.getYPosition();
+		ycar = ypos;
 	    ypos = ypos + 3.5;
 	    body.setYPosition(ypos);
 		
@@ -112,10 +125,14 @@ public class Character
 		ypos = rightWheel.getYPosition();
 	    ypos = ypos + 3.5;
 	    rightWheel.setYPosition(ypos);
+	    }
       }
       if (myArena.rightPressed())
 	  {
+	  if (xcar < 500)
+	  {
 		xpos = body.getXPosition();
+		xcar = xpos;
 	    xpos = xpos + 3.5;
 	    body.setXPosition(xpos);
 		
@@ -130,10 +147,14 @@ public class Character
 		xpos = rightWheel.getXPosition();
 	    xpos = xpos + 3.5;
 	    rightWheel.setXPosition(xpos);
+	    }
 	}
 	if (myArena.leftPressed())
 	  {
+	  if (xcar > 0)
+	  {
 		xpos = body.getXPosition();
+		xcar = xpos;
 	    xpos = xpos - 3.5;
 	    body.setXPosition(xpos);
 		
@@ -148,6 +169,7 @@ public class Character
 		xpos = rightWheel.getXPosition();
 	    xpos = xpos - 3.5;
 	    rightWheel.setXPosition(xpos);
+	    }
 	}
 	myArena.pause();
 	}
